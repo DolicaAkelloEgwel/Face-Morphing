@@ -8,6 +8,9 @@ Output: A video showing the fluid transformation from one face to the other
 
 Requirements
 -------------
+
+Needs Python 3.8
+
 ```
 numpy
 scikit_image
