@@ -9,7 +9,7 @@ Output: A video showing the fluid transformation from one face to the other
 Requirements
 -------------
 
-Needs Python 3.8
+Needs **Python 3.8** and assumes all input images are 1024x1024
 
 ```
 numpy
@@ -24,11 +24,6 @@ Getting Started
 -------------
 
 #### Test with demo images
-
-A photo of Jennie from Blackpink       |  A photo of Rihanna
-:-------------------------:|:-------------------------:
-![](/images/aligned_images/jennie.png)  |  ![](/images/aligned_images/rih.png)
-
 
 Generate a morphing animation video sequence
 
