@@ -75,7 +75,7 @@ if __name__ == "__main__":
     )
     parser.add_argument("--duration", type=int, default=5, help="The duration")
     parser.add_argument("--frame", type=int, default=20, help="The frameame Rate")
-    parser.add_argument("--output", help="Output Video Path")
+    parser.add_argument("--output", required=True, help="Output Video Path")
     args = parser.parse_args()
 
     images = read_images_in_folder(args.images)
