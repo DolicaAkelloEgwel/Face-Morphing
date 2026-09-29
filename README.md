@@ -19,7 +19,7 @@ Getting Started
 Generate a morphing animation video sequence
 
 ```
-python3 code/__init__.py --images images --output output.mp4
+uv run code/__init__.py --images images --output output.mp4
 ```
 
 ![Morphed Video](results/output.gif)
