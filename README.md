@@ -9,16 +9,7 @@ Output: A video showing the fluid transformation from one face to the other
 Requirements
 -------------
 
-Needs **Python 3.8** and assumes all input images are 1024x1024
-
-```
-numpy
-scikit_image
-opencv_python
-Pillow
-skimage
-dlib
-```
+Needs ffmpeg and assumes all input images are 1024x1024.
 
 Getting Started
 -------------
@@ -28,7 +19,7 @@ Getting Started
 Generate a morphing animation video sequence
 
 ```
-python3 code/__init__.py --img1 images/aligned_images/jennie.png --img2 images/aligned_images/rih.png --output output.mp4
+python3 code/__init__.py --images images --output output.mp4
 ```
 
 ![Morphed Video](results/output.gif)
@@ -40,7 +31,6 @@ python3 code/__init__.py --img1 images/aligned_images/jennie.png --img2 images/a
 2. Auto align faces with `python code/utils/align_images.py images/ images/aligned_images --output_size=1024`
 This will look for faces in the images - crop out, align (center the nose and make the eyes horizontal), and then rescale the resulting images and save them in "aligned_images" folder.
 3. Run `code/__init__.py` above on your aligned face images with arg `--img1` and `--img2`.
-
 
 
 Key Features
