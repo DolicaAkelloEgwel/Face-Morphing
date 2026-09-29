@@ -1,0 +1,31 @@
+[project]
+name = "face-morphing"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dlib>=20.0.1",
+    "ffmpeg>=1.4",
+    "ffmpeg-python>=0.2.0",
+    "future>=1.0.0",
+    "imageio>=2.38.0",
+    "imutils>=0.5.4",
+    "networkx>=3.7",
+    "numpy>=2.5.3",
+    "opencv-python>=5.0.0.93",
+    "packaging>=26.3",
+    "pillow>=12.3.0",
+    "pyparsing>=3.3.3",
+    "pywavelets>=1.10.0",
+    "scikit-image>=0.26.0",
+    "scipy>=1.18.1",
+    "tifffile>=2026.9.20",
+]
+
+[dependency-groups]
+dev = [
+    "black>=26.5.1",
+    "isort>=9.0.2",
+    "pre-commit>=4.6.2",
+]
