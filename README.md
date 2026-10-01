@@ -42,7 +42,6 @@ Key Features
 
 To Do
 -------------
-Morph multiple images into a complete sequence  
 Morph with body landmarks
 
 Citations
