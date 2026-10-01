@@ -1,10 +1,10 @@
 Face Morphing
 ===================
 
-Create a morphing sequences betwen two faces. 
+Create a morphing video between two or more faces.
 
-Input: Two images containing faces  
-Output: A video showing the fluid transformation from one face to the other  
+Input: A folder with two or more images of faces.  
+Output: A video showing the fluid transformation from one face to the other.
 
 Requirements
 -------------
@@ -16,7 +16,7 @@ Getting Started
 
 #### Test with demo images
 
-Generate a morphing animation video sequence
+Generate a morphing animation video sequence.
 
 ```
 uv run code/__init__.py --images images --output output.mp4
