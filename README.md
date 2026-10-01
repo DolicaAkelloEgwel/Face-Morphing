@@ -40,13 +40,6 @@ Key Features
 3. Calculate the **triangular mesh** with Delaunay Triangulation for each intermediate shape
 4. Warp the two input images towards the intermediate shape, perform **cross-dissolve** and obtain intermediate images each frame
 
-More Results
--------------
-![Morphed Video](results/final-club-final.gif)
-
-![Morphed Video](results/ld-final.gif)
-
-
 To Do
 -------------
 Morph multiple images into a complete sequence  
