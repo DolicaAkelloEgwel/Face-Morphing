@@ -6,7 +6,7 @@ Create a morphing video between two or more faces.
 
 ## Requirements
 
-This code assumes all input images are 1024x1024. It must be run with [pixi](https://pixi.prefix.dev/latest/).
+This code assumes all input images are 1024x1024. You may crop them yourself, or use the alignment code to do this for you. The code requires [pixi](https://pixi.prefix.dev/latest/) to run.
 
 ## Installation
 
@@ -33,10 +33,10 @@ pixi run python code/__init__.py --images demo-images --output output.mp4
 
 1. Prepare a folder of images
 
-2. Auto align faces with `pixi run python code/utils/align_images.py input/images/path aligned/images/path --output_size=1024`  
+2. Auto align faces with `pixi run python code/utils/align_images.py nonaligned/images/path aligned/images/path --output_size=1024`  
 This will look for faces in your input folder - crop out, align (center the nose and make the eyes horizontal), and then rescale the resulting images and save them in "aligned_images" folder.
 
-3. Run `pixi run python code/__init__.py --images aligned/images/path --output output-video-filename.mp4`.
+3. Run `pixi run python code/__init__.py --images input/images/path --output output-video-filename.mp4`.
 
 ## Citations
 
