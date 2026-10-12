@@ -24,7 +24,7 @@ You should now be able to use the code.
 
 ## Getting Started
 
-## Test with Demo Images
+### Test with Demo Images
 
 Generate a morphing animation video sequence.
 
@@ -32,7 +32,7 @@ Generate a morphing animation video sequence.
 pixi run python code/__init__.py --images demo-images --output output.mp4
 ```
 
-#### Test with Own Images
+### Test with Own Images
 
 1. Put your images in `Images` folder
 
@@ -40,20 +40,13 @@ pixi run python code/__init__.py --images demo-images --output output.mp4
 This will look for faces in the images - crop out, align (center the nose and make the eyes horizontal), and then rescale the resulting images and save them in "aligned_images" folder.
 3. Run `code/__init__.py` above on your aligned face images with arg `--img1` and `--img2`.
 
+## Key Features
 
-Key Features
--------------
 1. Detect and **auto align faces** in images (Optional for face morphing) 
 2. Generate **corresponding features points** between the two images using Dlib's Facial Landmark Detection
 3. Calculate the **triangular mesh** with Delaunay Triangulation for each intermediate shape
 4. Warp the two input images towards the intermediate shape, perform **cross-dissolve** and obtain intermediate images each frame
 
-To Do
--------------
-Morph with body landmarks
-Allow controlling image order
-
-Citations
--------------
+## Citations
 
 Adivces on working with facial landmarks with dlib and opencv https://www.pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python/ 
