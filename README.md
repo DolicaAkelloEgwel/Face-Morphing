@@ -2,14 +2,11 @@
 
 Create a morphing video between two or more faces.
 
-Input: A folder with two or more images of faces.  
-Output: A video showing the fluid transformation from one face to the other.
-
 ![Morphed Video](results/output.gif)
 
 ## Requirements
 
-This code assumes all input images are 1024x1024. It must be run with pixi.
+This code assumes all input images are 1024x1024. It must be run with [pixi](https://pixi.prefix.dev/latest/).
 
 ## Installation
 
