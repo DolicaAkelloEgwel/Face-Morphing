@@ -22,22 +22,17 @@ pixi install
 
 You should now be able to use the code.
 
-Getting Started
--------------
+## Getting Started
 
-#### Test with demo images
+## Test with Demo Images
 
 Generate a morphing animation video sequence.
 
 ```
-pixi run python code/__init__.py --images images --output output.mp4
+pixi run python code/__init__.py --images demo-images --output output.mp4
 ```
 
-
-
-<!-- <video src="/results/face-morph.mp4" width="320" height="320" controls></video> -->
-
-#### Test with your own images
+#### Test with Own Images
 
 1. Put your images in `Images` folder
 
