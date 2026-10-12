@@ -1,15 +1,26 @@
-Face Morphing
-===================
+# Face Morphing
 
 Create a morphing video between two or more faces.
 
 Input: A folder with two or more images of faces.  
 Output: A video showing the fluid transformation from one face to the other.
 
-Requirements
--------------
+![Morphed Video](results/output.gif)
 
-This code assumes all input images are 1024x1024.
+## Requirements
+
+This code assumes all input images are 1024x1024. It must be run with pixi.
+
+## Installation
+
+1. Clone the repository.
+2. In the repository folder, enter the following command:
+
+```
+pixi install
+```
+
+You should now be able to use the code.
 
 Getting Started
 -------------
@@ -22,9 +33,9 @@ Generate a morphing animation video sequence.
 pixi run python code/__init__.py --images images --output output.mp4
 ```
 
-![Morphed Video](results/output.gif)
 
-<video src="/results/face-morph.mp4" width="320" height="320" controls></video>
+
+<!-- <video src="/results/face-morph.mp4" width="320" height="320" controls></video> -->
 
 #### Test with your own images
 
