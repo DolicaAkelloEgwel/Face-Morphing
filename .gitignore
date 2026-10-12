@@ -32,3 +32,6 @@ cmd.txt
 # Video files too large
 output/
 output.mp4
+# pixi environments
+.pixi/*
+!.pixi/config.toml
