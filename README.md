@@ -31,19 +31,13 @@ pixi run python code/__init__.py --images demo-images --output output.mp4
 
 ### Test with Own Images
 
-1. Put your images in `Images` folder
+1. Prepare a folder of images
 
-2. Auto align faces with `pixi run python code/utils/align_images.py images/ images/aligned_images --output_size=1024`
-This will look for faces in the images - crop out, align (center the nose and make the eyes horizontal), and then rescale the resulting images and save them in "aligned_images" folder.
-3. Run `code/__init__.py` above on your aligned face images with arg `--img1` and `--img2`.
+2. Auto align faces with `pixi run python code/utils/align_images.py input/images/path aligned/images/path --output_size=1024`  
+This will look for faces in your input folder - crop out, align (center the nose and make the eyes horizontal), and then rescale the resulting images and save them in "aligned_images" folder.
 
-## Key Features
-
-1. Detect and **auto align faces** in images (Optional for face morphing) 
-2. Generate **corresponding features points** between the two images using Dlib's Facial Landmark Detection
-3. Calculate the **triangular mesh** with Delaunay Triangulation for each intermediate shape
-4. Warp the two input images towards the intermediate shape, perform **cross-dissolve** and obtain intermediate images each frame
+3. Run `pixi run python code/__init__.py --images aligned/images/path --output output-video-filename.mp4`.
 
 ## Citations
 
-Adivces on working with facial landmarks with dlib and opencv https://www.pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python/ 
+Advice on working with facial landmarks with dlib and opencv: https://www.pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python/ 
