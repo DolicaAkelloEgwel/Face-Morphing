@@ -24,6 +24,8 @@ uv run code/__init__.py --images images --output output.mp4
 
 ![Morphed Video](results/output.gif)
 
+<video src="/results/face-morph.mp4" width="320" height="320" controls></video>
+
 #### Test with your own images
 
 1. Put your images in `Images` folder
