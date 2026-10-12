@@ -9,7 +9,7 @@ Output: A video showing the fluid transformation from one face to the other.
 Requirements
 -------------
 
-Needs ffmpeg and assumes all input images are 1024x1024.
+This code assumes all input images are 1024x1024.
 
 Getting Started
 -------------
@@ -19,7 +19,7 @@ Getting Started
 Generate a morphing animation video sequence.
 
 ```
-uv run code/__init__.py --images images --output output.mp4
+pixi run python code/__init__.py --images images --output output.mp4
 ```
 
 ![Morphed Video](results/output.gif)
@@ -30,7 +30,7 @@ uv run code/__init__.py --images images --output output.mp4
 
 1. Put your images in `Images` folder
 
-2. Auto align faces with `python code/utils/align_images.py images/ images/aligned_images --output_size=1024`
+2. Auto align faces with `pixi run python code/utils/align_images.py images/ images/aligned_images --output_size=1024`
 This will look for faces in the images - crop out, align (center the nose and make the eyes horizontal), and then rescale the resulting images and save them in "aligned_images" folder.
 3. Run `code/__init__.py` above on your aligned face images with arg `--img1` and `--img2`.
 
@@ -45,6 +45,7 @@ Key Features
 To Do
 -------------
 Morph with body landmarks
+Allow controlling image order
 
 Citations
 -------------
