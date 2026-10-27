@@ -81,7 +81,7 @@ if __name__ == "__main__":
                         alpha=args.use_alpha,
                     )
                     print("Wrote result %s" % aligned_face_path)
-                except:
-                    print("Exception in face alignment!")
+                except Exception as e:
+                    print("Exception in face alignment!", e)
         except:
             print("Exception in landmark detection!")
