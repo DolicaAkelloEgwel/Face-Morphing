@@ -8,6 +8,13 @@ version = "0.1.0"
 [tasks]
 demo = "python code/__init__.py --images demo-images --output output.mp4"
 
+[tasks.morph]
+args = [
+    { "arg" = "inputpath" },
+    { "arg" = "outputpath" },
+]
+cmd = "python code/__init__.py --images {{ inputpath }} --output {{ outputpath }}"
+
 [dependencies]
 ffmpeg = ">=9.0.2,<10"
 numpy = ">=2.5.4,<3"
