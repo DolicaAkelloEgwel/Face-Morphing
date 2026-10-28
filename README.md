@@ -45,7 +45,7 @@ This will look for faces in your `nonaligned/images/path` folder - crop out, ali
 
 #### Run Morphing
 
-When a collection of 1024z1024 face images have been prepared, then run the following command:
+When a collection of 1024x1024 face images have been prepared, then run the following command:
 
 ```
 pixi run morph input/images/path output-video-filename.mp4
