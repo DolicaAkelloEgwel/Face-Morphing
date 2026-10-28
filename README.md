@@ -21,22 +21,37 @@ You should now be able to use the code.
 
 ## Getting Started
 
-### Test with Demo Images
+### Run with Demo Images
 
 Generate a morphing animation video sequence.
 
 ```
-pixi run python code/__init__.py --images demo-images --output output.mp4
+pixi run demo
 ```
 
-### Test with Own Images
+This will create a file called output.mp4 that morphs between the demo images.
 
-1. Prepare a folder of images
+### Run with Own Images
 
-2. Auto align faces with `pixi run python code/utils/align_images.py nonaligned/images/path aligned/images/path --output_size=1024`  
-This will look for faces in your input folder - crop out, align (center the nose and make the eyes horizontal), and then rescale the resulting images and save them in "aligned_images" folder.
+#### (Optional) Align Images
 
-3. Run `pixi run python code/__init__.py --images input/images/path --output output-video-filename.mp4`.
+The program expects input images to all be 1024x1024. You can align them yourself, or run images of any size through the alignment code, which will prepare them for you. To align images of faces, run the following command:
+
+```
+pixi run align nonaligned/images/path aligned/images/path
+```
+
+This will look for faces in your `nonaligned/images/path` folder - crop out, align (center the nose and make the eyes horizontal), and then rescale the resulting images and save them in an `aligned/images/path` folder.
+
+#### Run Morphing
+
+When a collection of 1024z1024 face images have been prepared, then run the following command:
+
+```
+pixi run morph input/images/path output-video-filename.mp4
+```
+
+The `output-video-filename.mp4` will show the morph sequence.
 
 ## Citations
 
