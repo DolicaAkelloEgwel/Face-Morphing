@@ -6,7 +6,8 @@ Create a morphing video between two or more faces.
 
 ## Requirements
 
-This code assumes all input images are 1024x1024. You may crop them yourself, or use the alignment code to do this for you. The code requires [pixi](https://pixi.prefix.dev/latest/) to run.
+- [pixi](https://pixi.prefix.dev/latest/)
+- A collection of face images
 
 ## Installation
 
@@ -38,20 +39,20 @@ This will create a file called output.mp4 that morphs between the demo images.
 The program expects input images to all be 1024x1024. You can align them yourself, or run images of any size through the alignment code, which will prepare them for you. To align images of faces, run the following command:
 
 ```
-pixi run align nonaligned/images/path aligned/images/path
+pixi run align YOUR_NONALIGNED_IMAGES_INPUT_FOLDER YOUR_ALIGNED_IMAGES_OUTPUT_FOLDER
 ```
 
-This will look for faces in your `nonaligned/images/path` folder - crop out, align (center the nose and make the eyes horizontal), and then rescale the resulting images and save them in an `aligned/images/path` folder.
+This will look for faces in the input folder - crop out, align (center the nose and make the eyes horizontal), and then rescale the resulting images and save them in the output folder.
 
 #### Run Morphing
 
-When a collection of 1024x1024 face images have been prepared, then run the following command:
+When a collection of 1024x1024 face images have been prepared, run the following command:
 
 ```
-pixi run morph input/images/path output-video-filename.mp4
+pixi run morph YOUR_INPUT_FOLDER YOUR_OUTPUT_FILENAME.mp4
 ```
 
-The `output-video-filename.mp4` will show the morph sequence.
+The output video will show the morph sequence.
 
 ## Citations
 
